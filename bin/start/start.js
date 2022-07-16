@@ -1,4 +1,5 @@
 const fs = require("fs")
+const { GenTestEnv } = require("./testenv")
 const LO_DAY_NUM = 0
 const HI_DAY_NUM = 5
 const TEMPLATE_PATH = "\\..\\..\\..\\..\\template.cpp"
@@ -18,7 +19,7 @@ function GenContest()
 
         const testenv_dir = contest_dir + "\\TestEnv"
         fs.mkdirSync(testenv_dir)
-        GenTestEnv(testenv_dir)
+        GenWorkspace(testenv_dir, true)
     }
     else
     {
@@ -71,7 +72,7 @@ function PutTemplateWorkspace(string, env = false)
 {
     if (env)
     {
-        console.log("Will be fixed soon!")
+        GenTestEnv(string)
     }
     else
     {
