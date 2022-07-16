@@ -1,0 +1,27 @@
+{
+  "name": "testenvlite_pa",
+  "version": "1.0.0",
+  "description": "CLI",
+  "main": "index.js",
+  "bin": {
+    "tran": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rusiek/TestEnvLite_PA.git"
+  },
+  "author": "Szymon Rusiecki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rusiek/TestEnvLite_PA/issues"
+  },
+  "homepage": "https://github.com/Rusiek/TestEnvLite_PA#readme",
+  "dependencies": {
+    "boxen": "^7.0.0",
+    "chalk": "^5.0.1",
+    "yargs": "^17.5.1"
+  }
+}
